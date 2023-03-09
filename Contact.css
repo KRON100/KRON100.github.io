@@ -1,0 +1,41 @@
+body{
+    background: linear-gradient(to right,rgb(185, 185, 235),wheat,rgb(185, 185, 235));
+}
+.navv{
+     
+    display: flex; 
+    background-color: rgb(115, 121, 211); 
+    border-top-right-radius: 40%; 
+    border-bottom-left-radius: 40%;
+}
+
+   i:hover{
+       cursor: pointer;
+   }
+   .ttle{
+    color: rgb(0, 0, 0); 
+    font-size: 300%; 
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+.btn {
+    margin-left: 30%;
+    margin-top: 2%; 
+    margin-right: 5%;
+    display: flex;
+}
+.btn > a{
+    color: rgb(0, 0, 0);
+    padding-left: 30%;
+    
+}
+.contact {
+    font-size: 200%;
+    margin-left: 6%;
+    margin-top: 3%;
+    
+}
+.social{
+    padding-left: 2%;
+}

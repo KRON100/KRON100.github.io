@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background: linear-gradient(to right,rgb(46, 100, 131), #62db69, #b0da1c,rgb(238, 238, 87),rgb(180, 113, 113));
+}
+header {
+    background-image: url(/Images/1640702224639\ \(1\).jpg);
+    margin-top: -2%;
+}
+
+nav {
+    margin-top: 2%; 
+    display: flex;
+}
+
+.ttle{
+    color: rgb(0, 0, 0); 
+    font-size: 300%; 
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+.btn {
+    margin-left: 30%;
+    margin-top: 2%; 
+    margin-right: 5%;
+    display: flex;
+}
+.btn > a{
+    color: rgb(0, 0, 0);
+    padding-left: 30%;
+}
+i:hover{
+    color: rgb(255, 255, 255);
+}
+a:hover{
+    color: rgb(238, 238, 238);
+}
+
+.text{
+    margin-left: 60%;
+    margin-top: 5%;
+}
+.text > h1{ 
+    font-size: 400%; 
+}
+.text > h2{ 
+    font-size: 300%;
+    margin-bottom: 5%;
+}
+.text > h3{
+    font-size: xx-large;
+    margin-bottom: 3%;
+}
+.text > h4{
+    font-size: xx-large;
+    margin-bottom: 3%;
+    padding-bottom: 20%;
+}
+footer{
+    display: flex;
+}
+footer > h1{
+    margin-top: 2%;
+    margin-left: 10%;
+    font-size: 400%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} 
+.button-73 {
+  background-color: transparent;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #1c1c1d 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 200%;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 10%;
+  margin-top: 2%;
+  
+}
+
+.button-73:hover {
+  background-color: transparent;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.button-73:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .button-73 {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}

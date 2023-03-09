@@ -1,0 +1,136 @@
+body{
+    background: linear-gradient(to right,rgb(185, 185, 235),wheat,rgb(185, 185, 235));
+}
+.navv{
+     
+    display: flex; 
+    background-color: rgb(115, 121, 211); 
+    border-top-right-radius: 40%; 
+    border-bottom-left-radius: 40%;
+}
+
+   i:hover{
+       cursor: pointer;
+   }
+   .ttle{
+    color: rgb(0, 0, 0); 
+    font-size: 300%; 
+    margin-top: 1%;
+    padding-left: 2%;
+}
+
+.btn {
+    margin-left: 33%;
+    margin-top: 2%; 
+    margin-right: 5%;
+    display: flex;
+}
+.btn > a{
+    color: rgb(0, 0, 0);
+    padding-left: 30%;
+    
+}
+
+.first {
+    display: flex; 
+    margin-top: 2%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211));
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.first > img{
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-left: 21%;
+}
+.first > h1{
+    margin-left: 20%;
+    margin-top: 4%; 
+    font-size: 300%;
+}
+.second{
+    display: flex; 
+    margin-top: 1%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211)); 
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.second > img{
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.second > h1{
+    margin-left: 17%; 
+    margin-top: 4%; 
+    font-size: 300%;
+}
+.third{
+    display: flex; 
+    margin-top: 2%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211));
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.third > img{
+    border-top-left-radius: 20%;border-bottom-left-radius: 20%;margin-left: 10%;
+}
+.third > h1{
+    margin-left: 16%;margin-top: 5%; font-size: 300%;
+}
+.fourth{
+    display: flex; 
+    margin-top: 1%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211));
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.fourth > img{
+    border-top-right-radius: 20%;border-bottom-right-radius: 20%;
+}
+.fourth > h1{
+    margin-left: 17%; margin-top: 5%; font-size: 300%;
+}
+.fifth{
+    display: flex; 
+    margin-top: 2%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211)); 
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.fifth > img{
+    border-top-left-radius: 20%;border-bottom-left-radius: 20%;margin-left: 22%;
+}
+.fifth > h1{
+    margin-left: 20%;margin-top: 5.5%; font-size: 300%; margin-right: 5%;
+}
+.sixth{
+    display: flex; 
+    margin-top: 1%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211));
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.sixth > img{
+    border-top-right-radius: 20%;border-bottom-right-radius: 20%;
+}
+.sixth > h1{
+    margin-left: 15%; margin-top: 5.5%; font-size: 300%;
+}
+.seventh{
+    display: flex; 
+    margin-top: 2%; 
+    background: linear-gradient(rgb(115, 121, 211),wheat,rgb(115, 121, 211));
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+.seventh > img{
+    border-top-left-radius: 20%;border-bottom-left-radius: 20%;margin-left: 21%;
+}
+.seventh > h1{
+    margin-left: 20%;margin-top: 7%; font-size: 300%;
+}

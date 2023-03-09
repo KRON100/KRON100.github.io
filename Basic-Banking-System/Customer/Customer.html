@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>V/S Bank</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="Customer.css">
+    
+
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+    
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper_inner">
+			<div class="vertical_wrap">
+			<div class="backdrop"></div>
+			<div class="vertical_bar">
+				<div class="profile_info">
+					<div class="img_holder">
+						<img src="/Basic-Banking-System/Images/1666862469407.jpg" alt="profile_pic">
+					</div>
+					<p class="title">Vishal Sharma</p>
+					<p class="sub_title">vishal@gmail.com</p>
+				</div>
+				<ul class="menu">
+					<li><a href="/Basic-Banking-System/index.html">
+						<span class="icon"><i class="fas fa-home"></i></span>
+						<span class="text">Dashboard</span>
+					</a></li>
+					<li><a href="/Basic-Banking-System/Account/Account.html" >
+						<span class="icon"><i class="fas fa-user"></i></span>
+						<span class="text">My Account</span>
+					</a></li>
+					<li><a href="/Basic-Banking-System/Customer/Customer.html" class="active">
+						<span class="icon"><i class="fas fa-users"></i></span>
+						<span class="text">All Customers</span>
+					</a></li>
+					<li><a href="/Basic-Banking-System/Cards/Cards.html">
+						<span class="icon"><i class="fas fa-credit-card"></i></span>
+						<span class="text">Cards</span>
+					</a></li>
+					<li><a href="/Basic-Banking-System/Settings/Settings.html">
+						<span class="icon"><i class="fas fa-cog"></i></span>
+						<span class="text">Settings</span>
+					</a></li>
+				</ul>
+
+				<ul class="social">
+					<li><a href="https://www.facebook.com/profile.php?id=100084625735377"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://twitter.com/VishalS15286178"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/i_kron10/"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_container">
+			<div class="top_bar">
+                <div class="hamburger">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo">
+					V/S <span>Banking</span>
+				</div>
+			</div>
+
+			<div class="container">
+
+				<!-- table creation -->
+    
+                <div class = "tableborder">
+
+                </div>
+                <div class="container">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered">
+                            <thead>
+                                <tr class="table-info">
+                                    <th scope="col">S.No.</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Bank Balance(in ₹)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table-light">
+                                    <td scope="row">1</td>
+                                    <td>Shraddha Dubey</td>
+                                    <td>minebro@gmail.com</td>
+                                    <td>
+                                        <p id="mminebroBankBalance">500</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">2</td>
+                                    <td>Ankit Jaiswal</td>
+                                    <td>ankit555@gmail.com</td>
+                                    <td>
+                                        <p id="ankit555BankBalance">10</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">3</td>
+                                    <td>Yamini</td>
+                                    <td>yamini44@gmail.com</td>
+                                    <td>
+                                        <p id="yamini44BankBalance">10</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">4</td>
+                                    <td>Gaurav Goswami</td>
+                                    <td>gaurav686@gmail.com</td>
+                                    <td>
+                                        <p id="gaurav686BankBalance">40</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">5</td>
+                                    <td>Alisha Khan</td>
+                                    <td>alisha54@gmail.com</td>
+                                    <td>
+                                        <p id="alisha54BankBalance">7</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">6</td>
+                                    <td>Sandhya Verma</td>
+                                    <td>prashant143@gmail.com</td>
+                                    <td>
+                                        <p id="prashant143BankBalance">103</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">7</td>
+                                    <td>Jyoti Verma</td>
+                                    <td>shivam143@gmail.com</td>
+                                    <td>
+                                        <p id="shivam143BankBalance">82</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">8</td>
+                                    <td>Anshika Mishra</td>
+                                    <td>bhut-door-hai@gmail.com</td>
+                                    <td>
+                                        <p id="bhut-door-haiBankBalance">68</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">9</td>
+                                    <td>Aman Pandey</td>
+                                    <td>pandeyji@gmail.com</td>
+                                    <td>
+                                        <p id="pandeyjiBankBalance">100</p>
+                                    </td>
+                                </tr>
+                                <tr class="table-light">
+                                    <td scope="row">10</td>
+                                    <td>Abhinav Kumar</td>
+                                    <td>abhi56@gmail.com</td>
+                                    <td>
+                                        <p id="abhi56BankBalance">57</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+			</div>
+                
+			</div>
+		</div>
+	</div>
+
+    <!-- Footer Starts Here -->
+
+    <footer>
+        <div class="content">
+          <div class="left box">
+            <div class="top">
+              <div class="title">About Us</div>
+              <p>
+                V/S Bank is an online banking platform which is free and affordable .
+                No mantainance charge.
+              </p>
+            </div>
+            <div class="bottom">
+              <div class="title">Contact Us</div>
+              <div class="phone">
+                <a href="#">
+                  <i class="fas fa-phone-volume"></i>+919999999999
+                </a>
+              </div>
+              <div class="mail">
+                <a href="#">
+                  <i class="fas fa-envelope"></i>vishalsharma@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="middle box">
+            <div class="title">Quick Links</div>
+            <div>
+              <a href="#">Banking Forms</a>
+            </div>
+            <div>
+              <a href="#">V/S FasTags</a>
+            </div>
+            <div>
+              <a href="#">NRI Schemes</a>
+            </div>
+            <div>
+              <a href="#">Services</a>
+            </div>
+            <div>
+              <a href="#">Support</a>
+            </div>
+            <div>
+              <a href="#">Partners</a>
+            </div>
+          </div>
+    
+          <div class="right box">
+            <div class="title">Subscribe Us</div>
+            <form action="#">
+              <input type="email" placeholder="enter email address" required>
+              <input type="submit" value="Subscribe">
+              <div class="socials">
+                <a href="https://www.facebook.com/profile.php?id=100084625735377"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/i_kron10/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/VishalS15286178"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/in/vishal-sharma-kron10/"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="copyright">
+          <p>Copyright &#169 2023
+            <a href="#">KRON100</a> All right reserved
+          </p>
+        </div>
+      </footer>
+
+      <!-- Footer Ends Here -->
+
+<script src="/Account/app.js"></script>
+
+    
+</body>
+</html>
