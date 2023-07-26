@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Jost', sans-serif;
+}
+
+body{
+	background: linear-gradient(to right, #28ada5, #2a41c2);
+}
+.img_holder{
+	margin-bottom: 8%;
+}
+.img_holder > img{
+	border-radius: 20%;
+}
+
+.wrapper{
+	margin: 0 10px;
+}
+
+.wrapper_inner{
+	position: relative;
+	max-width: 1250px;
+	width: 100%;
+	height: 700px;
+	background: #2ea4db;
+	margin: 30px auto;
+	border-radius: 25px;
+  display: flex;
+}
+
+.vertical_wrap{
+	position: relative;
+	height: 100%;
+}
+
+.vertical_bar{
+	width: 250px;
+	background: #0d438a;
+	height: 100%;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	position: relative;
+}
+
+.vertical_bar .profile_info{
+	text-align: center;
+	padding: 50px 25px;
+}
+
+.vertical_bar .profile_info img{
+	width: 75px;
+}
+
+.vertical_bar .profile_info .title{
+	font-size: 20px;
+	letter-spacing: 2px;
+	color: #000000;
+	font-weight: 700;
+}
+
+.vertical_bar .profile_info .sub_title{
+	font-size: 14px;
+	color: #000000;
+}
+
+.vertical_bar .menu{
+	padding-left: 25px;
+}
+
+.vertical_bar .menu li a{
+	display: block;
+	padding: 15px;
+	text-transform: uppercase;
+	color: #000000;
+	letter-spacing: 2px;
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	margin-bottom: 1px;
+}
+
+.vertical_bar .menu li a .icon{
+	color: #000000;
+	width: 25px;
+    display: inline-block;
+}
+
+.vertical_bar .menu li a:hover,
+.vertical_bar .menu li a.active{
+	background: #2ea4db;
+	color: #000000;
+}
+
+.vertical_bar .social{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	bottom: 50px;
+}
+
+.vertical_bar .social li a{
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	border: 1px solid #fff;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 50px;
+	margin: 0 10px;
+}
+
+.vertical_bar .social li a:hover{
+	color: #2ea4db;
+	background: #fff;
+}
+
+.main_container{
+	width: calc(100% - 250px);
+}
+
+.main_container .top_bar{
+	height: 60px;
+	background: #186fb6;
+	border-top-right-radius: 25px;
+	padding: 15px 25px;
+	display: flex;
+	align-items: center;
+}
+.top_bar .hamburger{
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	display: none;
+	margin-right: 25px;
+}
+
+.top_bar .logo{
+	font-size: 24px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #19aed3;
+}
+
+.top_bar .logo span{
+	color: #fff;
+}
+.main_container .container{
+	padding: 25px;
+	height: calc(100% - 60px);
+	overflow: auto;
+}
+.main_container .container .item{
+  font-size: x-large;
+  font-weight: 600;
+  color: #000000;
+	padding: 50px;
+	margin-bottom: 5%;
+  margin-top: 33%;
+  border-radius: 20%;
+}
+.container{
+  background-image: url(/Project/Basic-Banking-System-main/Images/gradient-cryptocurrency-concept_23-2149215736.avif);
+}
+@media (max-width: 768px){
+	.top_bar .hamburger{
+		display: inline-block;
+	}
+	.vertical_wrap{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		visibility: hidden;
+	}
+	.vertical_bar{
+		position: absolute;
+		top: 0;
+		left: -100%; 
+		transition: left 0.2s linear;
+	}
+	
+	.vertical_wrap .backdrop{
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 25px;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+	}
+	.main_container{
+		width: 100%;
+	}
+	.main_container .top_bar{
+		border-top-left-radius: 25px;
+	}
+	.wrapper.active .vertical_wrap{
+		visibility: visible;
+	}
+	.wrapper.active .vertical_bar{
+		left: 0;
+		transition: left 0.2s linear;
+	}
+}
+
+
+  footer {
+  
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #28ada5, #2a41c2);
+    padding-top: 1%;
+  }
+  
+  footer a,
+  p {
+    color: black;
+  }
+  
+  footer a {
+    transition: all 0.3s ease;
+  }
+  
+   footer a:hover {
+    color: #aacedf;
+  }
+  
+  .content {
+    max-width: 1350px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .content .box {
+    width: 33%;
+    transition: all 0.3s ease;
+  }
+  
+  .content .box .title {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .box p {
+    text-align: justify;
+  }
+  
+  .bottom .title {
+    margin: 24px 0 5px 0;
+  }
+  
+  .bottom i {
+    padding-right: 16px;
+  }
+  
+  .middle {
+    padding-left: 80px;
+  }
+  
+  .middle a {
+    line-height: 32px;
+  }
+  
+  .right input[type="email"] {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    color: #d9d9d9;
+    background: #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #222222;
+  }
+  
+  .right input[type="submit"] {
+    height: 43px;
+    width: 100%;
+    margin-top: 10px;
+    background: #2ea4db;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #2ea4db;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+  }
+  
+  .right input[type="submit"]:hover {
+    background: transparent;
+    color: #2ea4db;
+  }
+  
+  .socials a {
+    height: 45px;
+    width: 45px;
+    line-height: 43px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #222222;
+    margin: 30px 5px 0 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .socials a:hover {
+    border-color: #2ea4db;
+  }
+  
+  .copyright {
+    width: 100%;
+    text-align: right;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+  
+  .copyright a {
+    color: #2ea4db;
+  }
+  
+  @media (max-width: 1100px) {
+    .middle {
+      padding-left: 50px;
+    }
+  }
+  
+  @media (max-width: 950px) {
+    footer .content .box {
+      width: 50%;
+    }
+  
+    footer .content .right {
+      margin-top: 40px;
+    }
+  }
+  
+  @media (max-width: 560px) {
+    footer {
+      padding-top: 5%;
+    }
+    body{
+      margin-top: 0%;
+      background-size: 120%;
+    }
+    .hero{
+      margin-top: 20%;
+      margin-right: 3%;
+    }
+    .hero-p > p{
+      margin-top: 35%;
+font-size: medium;
+margin-bottom: 15%;
+    }
+    .sidebar{
+      height: 100%;
+      justify-content: space-between;
+    }
+   
+  
+    footer .content .box {
+      width: 100%;
+      margin-top: 30px;
+    }
+  
+    .middle {
+      padding-left: 0;
+    }
+  }
+ 

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>V/S Bank</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+	<link rel="stylesheet" href="Account.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper_inner">
+			<div class="vertical_wrap">
+			<div class="backdrop"></div>
+			<div class="vertical_bar">
+				<div class="profile_info">
+					<div class="img_holder">
+						<img src="/Project/Basic-Banking-System-main/Images/1666862469407.jpg" alt="profile_pic">
+					</div>
+					<p class="title">Vishal Sharma</p>
+					<p class="sub_title">vishal@gmail.com</p>
+				</div>
+        <ul class="menu">
+					<li><a href="/Project/Basic-Banking-System-main/index.html" >
+						<span class="icon"><i class="fas fa-home"></i></span>
+						<span class="text">Dashboard</span>
+					</a></li>
+					<li><a href="/Project/Basic-Banking-System-main/Account/Account.html" class="active">
+						<span class="icon"><i class="fas fa-user"></i></span>
+						<span class="text">My Account</span>
+					</a></li>
+					<li><a href="/Project/Basic-Banking-System-main/Customer/Customer.html">
+						<span class="icon"><i class="fas fa-users"></i></span>
+						<span class="text">All Customers</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-credit-card"></i></span>
+						<span class="text">Cards</span>
+					</a></li>
+					<li><a href="#">
+						<span class="icon"><i class="fas fa-cog"></i></span>
+						<span class="text">Settings</span>
+					</a></li>
+				</ul>
+
+				<ul class="social">
+					<li><a href="https://www.facebook.com/profile.php?id=100084625735377"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://twitter.com/VishalS15286178"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="https://www.instagram.com/i_kron10/"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main_container">
+			<div class="top_bar">
+                <div class="hamburger">
+					<i class="fas fa-bars"></i>
+				</div>
+				<div class="logo">
+					V/S <span>Banking</span>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="bank_balance_card">
+                        <p>your balance</p>
+                        <p class="balance"> ₹<span id="myAccountBalance">9996</span></p>
+                        <div class="account_no">
+                            <span>Saving A/C : <span class="no">xxxxxxx1234</span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="my-info ">
+                        <button class="btn btn-info" data-toggle="modal" data-target="#sendMoney">Send Money</button>
+                        <a class="btn btn-info" href="" data-toggle="modal" data-target="#transactionHistory">See All Transactions</a>
+                     </div>
+
+
+          <!-- Modal send money -->
+
+    <div class="modal fade" id="sendMoney" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Money</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <input type="text" id="enterName" class="form-control" placeholder="Recipient's username"
+                            aria-label="Recipient's username" aria-describedby="basic-addon2" autocomplete="off">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">₹</span>
+                        </div>
+                        <input type="text" id="enterAmount" class="form-control" placeholder=" Enter Amount"
+                            aria-label="Amount (to the nearest dollar)" autocomplete="off">
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" onclick="sendMoney()" class="btn btn-success" data-dismiss="modal">Send
+                    Money</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Modal transaction History-->
+    
+    <div class="modal fade" id="transactionHistory" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Transaction History</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ol id="transaction-history-body">
+
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- table creation -->
+    
+<div class = "tableborder">
+
+</div>
+<div class="container">
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered">
+            <thead>
+                <tr class="table-info">
+                    <th scope="col">S.No.</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Bank Balance(in ₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-light">
+                    <td scope="row">1</td>
+                    <td>Shraddha Dubey</td>
+                    <td>minebro@gmail.com</td>
+                    <td>
+                        <p id="mminebroBankBalance">500</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">2</td>
+                    <td>Ankit Jaiswal</td>
+                    <td>ankit555@gmail.com</td>
+                    <td>
+                        <p id="ankit555BankBalance">10</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">3</td>
+                    <td>Yamini</td>
+                    <td>yamini44@gmail.com</td>
+                    <td>
+                        <p id="yamini44BankBalance">10</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">4</td>
+                    <td>Gaurav Goswami</td>
+                    <td>gaurav686@gmail.com</td>
+                    <td>
+                        <p id="gaurav686BankBalance">40</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">5</td>
+                    <td>Alisha Khan</td>
+                    <td>alisha54@gmail.com</td>
+                    <td>
+                        <p id="alisha54BankBalance">7</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">6</td>
+                    <td>Sandhya Verma</td>
+                    <td>prashant143@gmail.com</td>
+                    <td>
+                        <p id="prashant143BankBalance">103</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">7</td>
+                    <td>Jyoti Verma</td>
+                    <td>shivam143@gmail.com</td>
+                    <td>
+                        <p id="shivam143BankBalance">82</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">8</td>
+                    <td>Anshika Mishra</td>
+                    <td>bhut-door-hai@gmail.com</td>
+                    <td>
+                        <p id="bhut-door-haiBankBalance">68</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">9</td>
+                    <td>Aman Pandey</td>
+                    <td>pandeyji@gmail.com</td>
+                    <td>
+                        <p id="pandeyjiBankBalance">100</p>
+                    </td>
+                </tr>
+                <tr class="table-light">
+                    <td scope="row">10</td>
+                    <td>Abhinav Kumar</td>
+                    <td>abhi56@gmail.com</td>
+                    <td>
+                        <p id="abhi56BankBalance">57</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+    
+
+					
+                </div>
+				</div>
+                
+			</div>
+		</div>
+  </div>
+	</div>
+
+   
+
+      <div class="overlay"></div>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+</body>
+</html>
